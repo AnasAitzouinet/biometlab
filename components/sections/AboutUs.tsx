@@ -52,13 +52,13 @@ const AboutUs = () => (
                             className="text-5xl md:text-7xl tracking-tighter text-left font-regular"
                             variants={itemVariants}
                         >
-                            Laboratoire d'Étalonnage de Précision
+                            Laboratoire d&apos;Étalonnage de Précision
                         </motion.h1>
                         <motion.p
                             className="text-xl leading-relaxed tracking-tight text-muted-foreground text-left"
                             variants={itemVariants}
                         >
-                            BiometLab est un laboratoire de métrologie de pointe au Maroc, spécialisé dans l'étalonnage et la vérification d'instruments de mesure. Notre équipe d'experts certifiés garantit des résultats précis et fiables pour répondre aux normes internationales les plus strictes.
+                            BiometLab est un laboratoire de métrologie de pointe au Maroc, spécialisé dans l&apos;étalonnage et la vérification d&apos;instruments de mesure. Notre équipe d&apos;experts certifiés garantit des résultats précis et fiables pour répondre aux normes internationales les plus strictes.
                         </motion.p>
                     </div>
                     <motion.div

@@ -1,4 +1,4 @@
-import { MoveRight, PhoneCall } from "lucide-react";
+import {  PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
@@ -63,7 +63,7 @@ export default function Hero() {
                                 className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left"
                                 variants={itemVariants}
                             >
-                                BiometLab se spécialise dans les services de métrologie et d'étalonnage de haute précision au Maroc, garantissant l'exactitude et la fiabilité de vos mesures critiques.
+                                BiometLab se spécialise dans les services de métrologie et d&apos;étalonnage de haute précision au Maroc, garantissant l&apos;exactitude et la fiabilité de vos mesures critiques.
                             </motion.p>
                         </div>
                         <motion.div

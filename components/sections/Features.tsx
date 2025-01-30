@@ -8,9 +8,7 @@ import {
     CarouselItem,
 } from "@/components/ui/carousel";
 import { User } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "../ui/badge";
-
+ 
 
 const features = [
     {
@@ -54,8 +52,8 @@ const features = [
         image: "https://mclmaroc.com/wp-content/uploads/2019/05/researching-laboratory_1384-149-300x200.jpg"
     },
     {
-        title: "Debitmetre compteur d'eau",
-        description: "Vérification et étalonnage des débitmètres et compteurs d'eau industriels",
+        title: "Debitmetre compteur d&apos;eau",
+        description: "Vérification et étalonnage des débitmètres et compteurs d&apos;eau industriels",
         image: "https://mclmaroc.com/wp-content/uploads/2020/07/2-mini-300x176.jpg"
     },
     {
@@ -75,7 +73,7 @@ const features = [
     },
     {
         title: "Tachymetre chronometre anemometre",
-        description: "Étalonnage des instruments de mesure de vitesse, temps et débit d'air",
+        description: "Étalonnage des instruments de mesure de vitesse, temps et débit d&apos;air",
         image: "https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg"
     },
     {
@@ -111,7 +109,7 @@ const Features = () => {
             <div className="container mx-auto">
                 <div className="flex flex-col gap-10">
                     <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-4xl font-regular text-left">
-                        BiometLab - Expertise en Métrologie et Étalonnage d'Instruments de Mesure au Maroc
+                        BiometLab - Expertise en Métrologie et Étalonnage d&apos;Instruments de Mesure au Maroc
 
                     </h2>
                     <Carousel setApi={setApi} className="w-full">
@@ -148,5 +146,3 @@ const Features = () => {
 
 
 export default Features;
-
-

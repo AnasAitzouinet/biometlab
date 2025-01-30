@@ -1,4 +1,4 @@
-import { Check, PhoneCall } from "lucide-react";
+import {    PhoneCall } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import {
   Accordion,
@@ -22,7 +22,7 @@ export const FAQ1 = () => (
                 Questions fréquentes sur la métrologie
               </h4>
               <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground  text-left">
-                La métrologie est un domaine complexe et essentiel pour garantir la précision des mesures. Nous répondons ici aux questions les plus courantes concernant nos services d'étalonnage et de métrologie légale.
+                La métrologie est un domaine complexe et essentiel pour garantir la précision des mesures. Nous répondons ici aux questions les plus courantes concernant nos services d&apos;étalonnage et de métrologie légale.
               </p>
             </div>
             <div className="">
@@ -51,32 +51,32 @@ export const FAQ1 = () => (
 
 const faqs = [
     {
-      question: "Quelle est la fréquence recommandée pour l'étalonnage des instruments ?",
-      answer: "La fréquence d'étalonnage dépend de plusieurs facteurs : utilisation, environnement, et exigences réglementaires. Nous recommandons généralement un étalonnage annuel."
+      question: "Quelle est la fréquence recommandée pour l&apos;étalonnage des instruments ?",
+      answer: "La fréquence d&apos;étalonnage dépend de plusieurs facteurs : utilisation, environnement, et exigences réglementaires. Nous recommandons généralement un étalonnage annuel."
     },
     {
       question: "Quelles sont les normes de métrologie appliquées ?",
       answer: "Nous suivons les normes internationales ISO/IEC 17025 et les exigences du système métrique légal marocain."
     },
     {
-      question: "Pouvez-vous certifier des instruments pour l'export ?",
-      answer: "Oui, nous délivrons des certificats d'étalonnage reconnus internationalement, conformes aux exigences OIML."
+      question: "Pouvez-vous certifier des instruments pour l&apos;export ?",
+      answer: "Oui, nous délivrons des certificats d&apos;étalonnage reconnus internationalement, conformes aux exigences OIML."
     },
     {
       question: "Quel est le délai moyen pour un étalonnage ?",
-      answer: "Le délai varie selon le type d'instrument, mais en moyenne, nous effectuons les étalonnages sous 3 à 5 jours ouvrables."
+      answer: "Le délai varie selon le type d&apos;instrument, mais en moyenne, nous effectuons les étalonnages sous 3 à 5 jours ouvrables."
     },
     {
       question: "Proposez-vous des services de métrologie sur site ?",
-      answer: "Oui, nous disposons d'équipements portables pour effectuer des étalonnages directement dans vos locaux lorsque cela est possible."
+      answer: "Oui, nous disposons d&apos;équipements portables pour effectuer des étalonnages directement dans vos locaux lorsque cela est possible."
     },
     {
       question: "Comment garantir la traçabilité des mesures ?",
       answer: "Nous utilisons des étalons de référence certifiés, traçables aux étalons nationaux et internationaux."
     },
     {
-      question: "Quels types d'instruments étalonnez-vous ?",
-      answer: "Nous étalonnons une large gamme d'instruments : balances, thermomètres, manomètres, instruments de mesure électrique, etc."
+      question: "Quels types d&apos;instruments étalonnez-vous ?",
+      answer: "Nous étalonnons une large gamme d&apos;instruments : balances, thermomètres, manomètres, instruments de mesure électrique, etc."
     },
     {
       question: "Proposez-vous des formations en métrologie ?",
