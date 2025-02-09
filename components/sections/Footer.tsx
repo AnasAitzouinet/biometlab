@@ -15,18 +15,12 @@ export const Footer1 = () => {
           title: "Étalonnage",
           href: "/#etalonnage",
         },
-        {
-          title: "Vérification",
-          href: "/#Verification",
-        },
+
         {
           title: "Métrologie légale",
           href: "/#metrologie-legale",
         },
-        {
-          title: "Formation",
-          href: "/#formation",
-        },
+       
       ],
     },
     {
@@ -37,11 +31,8 @@ export const Footer1 = () => {
           title: "À propos",
           href: "/about",
         },
-        {
-          title: "Certifications",
-          href: "/certifications",
-        },
-       
+        
+
         {
           title: "Contact",
           href: "/contact",
@@ -51,7 +42,7 @@ export const Footer1 = () => {
   ];
 
   return (
-    <div className="w-full py-20 lg:py-40 bg-foreground text-background">
+    <div className="w-full py-20 lg:py-40 bg-blue-950 text-background">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="flex gap-8 flex-col items-start">

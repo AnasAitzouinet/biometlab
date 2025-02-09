@@ -35,7 +35,7 @@ const imageVariants = {
 export default function Hero() {
     return (
         <motion.div
-            className="w-full py-10 px-6 xl:px-0 lg:py-16 "
+            className="w-full py-10 mt-10 px-6 xl:px-0 lg:py-16 "
             initial="hidden"
             animate="visible"
         >

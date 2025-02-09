@@ -31,7 +31,7 @@ const CTA = () => (
     >
         <div className="container mx-auto">
             <motion.div 
-                className="flex flex-col text-center bg-gradient-to-tr from-blue-500 to-green-500 rounded-md p-4 lg:p-14 gap-8 items-center"
+                className="flex flex-col text-center bg-gradient-to-tr from-blue-900 to-green-500 rounded-md p-4 lg:p-14 gap-8 items-center"
                 variants={containerVariants}
             >
                 <motion.div variants={itemVariants}>
