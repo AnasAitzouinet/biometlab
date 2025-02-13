@@ -1,9 +1,12 @@
 import { MapPin, Phone } from "lucide-react"
-import { Button } from "@/components/ui/button"
-
+ 
 export function ContactInfo() {
   return (
     <div className="space-y-8">
+      <div>
+        <h1 className="text-2xl font-bold mb-4">BIOTECHNOLOGIE AND METROLOGIE LABORATORY</h1>
+      </div>
+
       <div>
         <h2 className="font-medium mb-2">Nous contacter par téléphone</h2>
         <p className="text-gray-600 mb-2">
@@ -12,7 +15,6 @@ export function ContactInfo() {
         <a href="tel:+212522123456" className="text-blue-500 hover:text-blue-600 flex items-center gap-2">
           <Phone className="h-4 w-4" />
           +212 6682 90152
-
         </a>
       </div>
 
@@ -21,9 +23,15 @@ export function ContactInfo() {
         <p className="text-gray-600 mb-2">
           Notre laboratoire est situé à Casablanca. Nous vous accueillons sur rendez-vous pour discuter de vos besoins en métrologie.
         </p>
-        <div className="text-blue-500 flex items-center gap-2">
-          <MapPin className="h-4 w-4" />
-          Rue de la Métrologie, 123 - Casablanca, Maroc
+        <div className="text-blue-500 flex flex-col gap-2">
+          <div className="flex items-center gap-2">
+            <MapPin className="h-4 w-4" />
+            Siège : 276 BD IBN TACHEFINE 3EME ETAGE CASABLANCA
+          </div>
+          <div className="flex items-center gap-2">
+            <MapPin className="h-4 w-4" />
+            Bureau : Office EL FERDOUAS IMM 2 ETAGE 5 N 49 AIN SEBAA CASABLANCA
+          </div>
         </div>
       </div>
 

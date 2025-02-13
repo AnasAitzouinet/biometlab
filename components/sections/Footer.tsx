@@ -3,52 +3,33 @@ import Link from "next/link";
 export const Footer1 = () => {
   const navigationItems = [
     {
-      title: "Accueil",
-      href: "/",
-      description: "",
+        title: "Accueil",
+        href: "/",
+        description: "",
     },
     {
-      title: "Services",
-      description: "Nos services de métrologie de précision",
-      items: [
-        {
-          title: "Étalonnage",
-          href: "/#etalonnage",
-        },
-
-        {
-          title: "Métrologie légale",
-          href: "/#metrologie-legale",
-        },
-       
-      ],
+        title: "Nos Prestations",
+        description: "Découvrez nos services",
+         
     },
     {
-      title: "Entreprise",
-      description: "À propos de BiometLab",
-      items: [
-        {
-          title: "À propos",
-          href: "/about",
-        },
-        
+        title: "Contactez-Nous",
+        href: "/Contact",
 
-        {
-          title: "Contact",
-          href: "/contact",
-        },
-      ],
     },
-  ];
+];
 
   return (
-    <div className="w-full py-20 lg:py-40 bg-blue-950 text-background">
+    <div className="w-full px-8 py-20 lg:py-40 bg-blue-950 text-background">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="flex gap-8 flex-col items-start">
             <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
+            <h1 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
                 BiometLab
+              </h1>
+              <h2 className="text-lg md:text-xl tracking-tighter max-w-xl font-regular text-left">
+                BIOTECHNOLOGIE AND METROLOGIE LABORATORY
               </h2>
               <p className="text-lg max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
                 Expertise en métrologie et étalonnage de précision au Maroc
@@ -56,9 +37,8 @@ export const Footer1 = () => {
             </div>
             <div className="flex gap-20 flex-row">
               <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
-                <p>Rue de la Métrologie, 123</p>
-                <p>Casablanca</p>
-                <p>Maroc</p>
+                <p>Siège : 276 BD IBN TACHEFINE 3EME ETAGE CASABLANCA</p>
+                <p>Bureau : Office EL FERDOUAS IMM 2 ETAGE 5 N 49 AIN SEBAA CASABLANCA</p>
               </div>
               <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
                 <Link href="/">Conditions d&apos;utilisation</Link>
@@ -83,18 +63,7 @@ export const Footer1 = () => {
                   ) : (
                     <p className="text-xl">{item.title}</p>
                   )}
-                  {item.items &&
-                    item.items.map((subItem) => (
-                      <Link
-                        key={subItem.title}
-                        href={subItem.href}
-                        className="flex justify-between items-center"
-                      >
-                        <span className="text-background/75">
-                          {subItem.title}
-                        </span>
-                      </Link>
-                    ))}
+                  <p className="text-sm">{item.description}</p>
                 </div>
               </div>
             ))}

@@ -45,7 +45,7 @@ export function ContactForm() {
     return (
         <div className="space-y-8">
             <div className="text-gray-600">
-                Nous serions ravis d'entendre parler de vous. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.
+                Nous serions ravis d&apos;entendre parler de vous. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.
             </div>
             <form method="post" onSubmit={onSubmit} className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">

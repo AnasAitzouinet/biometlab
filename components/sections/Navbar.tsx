@@ -26,26 +26,65 @@ export default function Navbar() {
             description: "Découvrez nos services",
             items: [
                 {
-                    title: "Reports",
-                    href: "/reports",
+                    "title":"Laboratoire Dimensionnel",
+                    "description":"Etalonnage des instruments de mesure dimensionnelle",
+                    "href":"/nos-prestations#dimensionnel"
                 },
                 {
-                    title: "Statistics",
-                    href: "/statistics",
+                    title:"Laboratoire Température",
+                    description:"Etalonnage des instruments de mesure de température",
+                    "href":"/nos-prestations#temperature"
                 },
                 {
-                    title: "Dashboards",
-                    href: "/dashboards",
+                    title:"Laboratoire Pression",
+                    description:"Etalonnage des instruments de mesure de pression",
+                    "href":"/nos-prestations#pression"
                 },
                 {
-                    title: "Recordings",
-                    href: "/recordings",
+                    title:"Laboratoire d'hygrométrie",
+                    description:"Etalonnage des instruments de mesure d'hygrométrie",
+                    "href":"/nos-prestations#hygrometrie"
                 },
-            ],
+                {
+                    title:"Laboratoire de pesage-Masse",
+                    description:"Etalonnage des instruments de mesure de masse",
+                    "href":"/nos-prestations#pesage-masse"
+                },
+                {
+                    title:"Laboratoire de Volume",
+                    description:"Etalonnage des instruments de mesure de volume",
+                    "href":"/nos-prestations#volume"
+                },
+                {
+                    title:"Laboratoire d'electricite-magnetisme",
+                    description:"Etalonnage des instruments de mesure d'electricite-magnetisme",
+                    "href":"/nos-prestations#electricite-magnetisme"
+                },
+                {
+                    title:"Laboratoire de Force",
+                    description:"Etalonnage des instruments de mesure de force",
+                    "href":"/nos-prestations#force"
+                },
+                {
+                    title:"Laboratoire d'anémométrie",
+                    description:"Etalonnage des instruments de mesure d'anémométrie",
+                    "href":"/nos-prestations#anemometrie"
+                },
+                {
+                   title:"Laboratoire de Tachymétrie",
+                   description:"Etalonnage des instruments de mesure de tavhymétrie",
+                   "href":"/nos-prestations#tachymetrie"    
+                },
+                {
+                    title:"Laboratoire de contrôle de qualité",
+                    description:"Etalonnage des instruments de mesure de contrôle de qualité",
+                    "href":"/nos-prestations#controle-qualite"
+                }
+            ]
         },
         {
             title: "Contactez-Nous",
-            href: "/",
+            href: "/Contact",
 
         },
     ];
@@ -61,8 +100,10 @@ export default function Navbar() {
                                 <NavigationMenuItem key={item.title}>
                                     {item.href ? (
                                         <>
-                                            <NavigationMenuLink>
-                                                <Button variant="ghost">{item.title}</Button>
+                                            <NavigationMenuLink href={item.href}>
+                                                <Button variant="ghost" >
+                                                    {item.title}
+                                                </Button>
                                             </NavigationMenuLink>
                                         </>
                                     ) : (
@@ -79,8 +120,8 @@ export default function Navbar() {
                                                                 {item.description}
                                                             </p>
                                                         </div>
-                                                        <Button size="sm" className="mt-10">
-                                                            Demandez un devis
+                                                        <Button size="sm" className="mt-10" asChild>
+                                                            <Link href="/Contact">Demander un devis</Link>
                                                         </Button>
                                                     </div>
                                                     <div className="flex flex-col text-sm h-full justify-end">
@@ -119,11 +160,11 @@ export default function Navbar() {
                         </a>
                     </div>
                     <div className="border-r hidden md:inline"></div>
+
                     <Button
                         variant="outline"
-                        className="hidden md:inline"
-                    >
-                        Demander un devis
+                        className="hidden md:inline" asChild>
+                        <Link href="/Contact">Demander un devis</Link>
                     </Button>
                 </div>
                 <div className="flex w-12 shrink lg:hidden items-end justify-end">
@@ -140,7 +181,7 @@ export default function Navbar() {
                                                 href={item.href}
                                                 className="flex justify-between items-center"
                                             >
-                                                <span className="text-lg">{item.title}</span>
+                                                <span className="text-lg">{item.title} </span>
                                                 <MoveRight className="w-4 h-4 stroke-1 text-muted-foreground" />
                                             </Link>
                                         ) : (
